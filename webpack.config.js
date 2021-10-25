@@ -3,6 +3,7 @@ const HtmlWebpack = require('html-webpack-plugin')
 const MiniCssExtract = require('mini-css-extract-plugin')
 
 module.exports = {
+
     entry: './src/index.js',
     output: {
         filename: 'main.js',
@@ -11,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(sa|sc|c)ss$/,
+                test: /\.(sa|c|sc)ss$/i, 
                 use: [
                     MiniCssExtract.loader,
                     'css-loader',
@@ -34,10 +35,9 @@ module.exports = {
                         presets: ['@babel/preset-env']
                     }
                 }
-                
             },
             {
-                test: /\.(jpg|jpeg|png|svg|gif)$/,
+                test: /\.(jpeg|jpg|png|svg|gif)$/i,
                 use: {
                     loader: 'file-loader',
                     options: {
@@ -53,7 +53,8 @@ module.exports = {
             template: './src/index.html'
         }),
         new MiniCssExtract({
-            filename: 'styles.css'
+            filename: 'style.css'
         })
     ]
+
 }
