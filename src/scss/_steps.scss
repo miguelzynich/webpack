@@ -1,21 +1,31 @@
 #como-funciona {
     background: $font-color-primary;
+    padding-bottom: 8rem;
+    margin-bottom: 8rem;
 }
 
 .steps {
     align-items: center;
     display: flex;
+    align-items: first baseline;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
 
     &__item {
         margin: 1rem;
-        width: calc(80% / 5 - 1rem);
+        width: calc(90% / 5 - 1rem);
         text-align: center;
         span {
             color: $color-secondary;
         }
+    }
+
+    h3{
+        font-size: 20px;
+        font-weight: 600;
+        color: #f58220;
+
     }
 
 }

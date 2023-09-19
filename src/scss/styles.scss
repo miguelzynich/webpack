@@ -1,7 +1,7 @@
-$color-primary: #195484;
-$color-secondary: #f58220;
+$color-primary: #201e1f;
+$color-secondary: #f68635;
 $font-color-primary: #ffffff;
-$font-color-secondary: #454545;
+$font-color-secondary: #000000;
 $font-default: Arial, Helvetica, sans-serif;
 $font-size-default: 1.6rem;
 $font-size-nav: 1.8rem;
@@ -17,7 +17,7 @@ html {
 
 body {
     background-color: $color-primary;
-    font-family: $font-default;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 

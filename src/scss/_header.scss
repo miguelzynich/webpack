@@ -7,16 +7,18 @@ header .container {
 
     .hero {
         align-items: flex-end;
-        background-image: url('../assets/images/banner-lance-me.png');
+        background-image: url('../assets/images/banner.png');
         background-repeat: no-repeat;
         background-position: top center;
-        height: 45rem;
+        height: 75rem;
         display: flex;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         width: 100%;
+        margin: 0;
 
         h1 {
-            padding: 1rem 0 0;
+            padding: 2rem 0 0;
+            margin: 0 auto;
             text-align: center;
             width: 100%;
         }
