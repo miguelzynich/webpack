@@ -1,16 +1,42 @@
 .vitrine {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 2rem;
+
+    @media (max-width: 767px){
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        justify-items: center;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 2rem;
+    }
+
+    @media (max-width: 1198px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+
+    .vitrine__item {
+        max-width: calc(25% - 2rem); /* Define uma largura máxima para os cards */
+    }
 
     &__item {
         background-color: rgb(216, 214, 214);
+        
         border-radius: 1rem;
         display: flex;
         flex-flow: column;
         justify-content: center;
         align-items: flex-start;
-        min-height: 20rem;
+        min-height: 18rem;
+        min-width: 300px;
+        margin: 5rem;
         padding: 1rem;
         position: relative;
         &:hover {

@@ -1,20 +1,23 @@
 #como-funciona {
     background: $font-color-primary;
     padding-bottom: 8rem;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
 }
 
 .steps {
     align-items: center;
     display: flex;
-    align-items: first baseline;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
+    margin: 0 auto;
 
     &__item {
-        margin: 1rem;
-        width: calc(90% / 5 - 1rem);
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem;
         text-align: center;
         span {
             color: $color-secondary;

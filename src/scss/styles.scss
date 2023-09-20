@@ -9,6 +9,17 @@ $font-size-nav: 1.8rem;
 @import 'fonts';
 @import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 @import 'nav';
+@import 'grids';
+
+@viewport{
+    width: device-width;
+    zoom: 1;
+}
+
+*{
+    box-sizing: border-box;
+
+}
 
 html {
     font-size: 62.5%;
@@ -19,12 +30,13 @@ body {
     background-color: $color-primary;
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    font-size: 1.4rem;
 }
 
 h1 {
     color: $font-color-primary;
     text-align: center;
-    margin-top: 4rem;
+    margin: 2rem;
 }
 
 article {
@@ -56,15 +68,34 @@ footer {
 }
 
 section {
-    padding: 4rem 0;
-    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+
+}
+
+nav{
+    display: flex; 
+    align-items: center; 
+    justify-content: end; 
+    padding: 10px; 
+    gap: 20px; 
+    white-space: nowrap;
 }
 
 .container {
-    display: flex;
-    flex-flow: column;
     margin: 0 auto;
     max-width: 90vw;
+
+    @media (max-width: 768px){
+        max-width: 94%;
+    }
+
 }
 
 @import 'animations';
@@ -74,3 +105,4 @@ section {
 @import 'vitrine';
 @import 'steps';
 @import 'footer';
+@import 'responsive';
